@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*HEADER*/
+.head-title{
+	margin-top: 100px;
+}
+.header{
+	height: 62px;
+	padding: 15px 0;
+}
+.logo{
+	width: 135px;
+	height: 26px;
+	
+}
+
+.btn-login{
+	background: #fff;
+	color: #59a34a;
+	border-radius: 25px;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.triangle1{
+	background-size: 100% !important;
+	height: 137px;
+	background-color: #fff;
+}
+
+/*CONTEN*/
+
+.header-con{
+	width: 100%;
+	min-height: 300px;
+	max-height: 600px;
+	padding-bottom: 20px;
+}
+
+.header-con h1{
+	text-align: center;
+	color: white;
+}
+
+.header-con h3{
+	color: white;
+}
+
+
+
+.handcard{
+	width: 247px;
+	height: 245px;
+}
+.phonetop{
+	width: 348px;
+	height: 322px;
+}
+
+.content{
+	padding: 30px 0;
+}
+
+.powerball, .floridalotto, .megamillions{
+	width: 235px;
+	height: 169px;
+	margin: auto;	
+}
+
+.tContent2 b{
+	font-size: 20px;
+	
+}
+
+.tContent2 p{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+
+.c-how{
+	background: #eeeef0;
+	padding: 20px 0;
+}
+
+.c-how h1{
+	color: #87868b;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+.triangle2{
+	background-size: 100% !important;
+	background-color: #eeeef0;
+	height: 50px;
+}
+
+.c-easy{
+	background-color: #c4c5ca;
+	padding: 50px 0;
+}
+
+.c-easy h1{
+	color: #013b69;
+	font-weight: bold;
+}
+
+.c-easy-mar{
+	margin: 80px 10px;
+}
+
+.c-easy-t1{
+	color: #fff;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.c-easy-t2{
+	color: #847fa7;
+	font-size: 16px;
+}
+
+.c-where{
+	background: #eceaed;
+	padding: 50px 0;
+}
+
+.c-where h1{
+	color: #4a71b2;
+	font-weight: bold;
+}
+
+/*FOOTER*/
+
+.center-f{
+	padding: 1% 27%;
+    margin-top: 20px;
+}
+
+.footer-play{
+	background: #053b6a;
+	padding: 30px 0;
+}
+
+.footer-play h1{
+	color: #7caee3;
+}
+
+.footer-play h4{
+	color: #fff;
+}
+
+.footer {
+	background-color: #4a71b2;
+	color: #fff;
+	
+}
+
+.footer ul li a{
+	    float: left;
+		color: #fff;
+}
+
+.nav-2 {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav-2>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+	line-height: 20px;
+}
+
+.nav-2>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+
+.nav-2>li>a:hover {
+    text-decoration: none !important;
+    color: #033c69 !important;
+}
+
+.input-group{
+	margin-left: 40px;
+}
+
+.input-email{
+	border-radius: 25px;
+	padding: 6px 60px;
+	border: none;
+	margin-right: -30px;
+}
+
+.btn-email{
+	border-radius: 25px;
+	padding: 6px 20px 6px 25px;
+	border: none;
+	background-color: #519d42;
+	color: #fff; 
+}
+
+@media (max-width: 540px) {
+	.header-con{text-align: center;}
+	.header-con h3{margin-top: 30px;}
+	.head-title{
+	  margin-top: 50px;
+  }
+  .triangle1 {height: 50px;}
+  .triangle2{
+	  height: 10px;
+  }
+}
+
+@media (max-width: 740px) {
+  .triangle1 {height: 75px;}
+  .triangle2{
+	  height: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .triangle2{
+	  height: 15px;
+  }
+}
+@media (max-width: 550px) and (min-width: 450) {
+  .triangle2{
+	  height: 15px;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 500px) {
+  .triangle2{
+	  height: 30px;
+  }
+}
+.steps{
+	text-align: center;
+}
+.steps img{margin: auto;}
+.step-arrow{
+	width: 50px; 
+	float: left; 
+	height: 70px;
+  margin-top: 70px;
+  background-position: center;
+}
+/*
+.navbar-nav-2 {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    table-layout: fixed;
+    font-size: 1.25em;
+}	
+
+.navbar-nav-2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.nav-2 {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav-2 li a{
+	float: left;
+}
+
+*/

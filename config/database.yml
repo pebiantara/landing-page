@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: landing-page_development
+  host: localhost
+  username: landing
+  password: password
+
+test:
+  <<: *default
+  database: landing-page_test
+  host: localhost
+  username: landing
+  password: password
+
+production:
+  <<: *default
+  database: landing-page_production
+  username: landing-page
+  password: <%= ENV['LANDING-PAGE_DATABASE_PASSWORD'] %>
