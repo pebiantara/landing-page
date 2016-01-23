@@ -206,9 +206,10 @@
 
 .input-email{
 	border-radius: 25px;
-	padding: 6px 60px;
+	padding: 6px 40px;
 	border: none;
-	margin-right: -30px;
+	/*width: 60%;*/
+	margin-right: -80px;
 }
 
 .btn-email{
@@ -237,7 +238,7 @@
 	  height: 30px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 450px) and (min-width: 200px) {
   .triangle2{
 	  height: 15px;
   }
@@ -263,6 +264,17 @@
 	height: 70px;
   margin-top: 70px;
   background-position: center;
+}
+
+.footer-link { width: 100%; overflow: hidden; }
+.footer-link ul { list-style: none; position: relative; float: left; display: block; left: 50%; }
+.footer-link ul li { position: relative; float: left; display: block; right: 50%; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 /*
 .navbar-nav-2 {
