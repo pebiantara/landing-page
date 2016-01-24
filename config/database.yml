@@ -19,6 +19,7 @@ test:
 
 production:
   <<: *default
-  database: landing-page_production
-  username: landing-page
-  password: <%= ENV['LANDING-PAGE_DATABASE_PASSWORD'] %>
+  database: landing-page_test
+  host: localhost
+  username: landing
+  password: password
