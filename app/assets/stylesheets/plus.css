@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-family: 'MyWebFont';
+	src: url('webfont.eot'); /* IE9 Compat Modes */
+	src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+	url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /*HEADER*/
@@ -146,7 +146,7 @@
 
 .center-f{
 	padding: 1% 27%;
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .footer-play{
@@ -169,26 +169,26 @@
 }
 
 .footer ul li a{
-	    float: left;
-		color: #fff;
+	float: left;
+	color: #fff;
 }
 
 .nav-2 {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
 
 .navbar-nav-2>li>a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	line-height: 20px;
 }
 
 .nav-2>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
 	font-weight: bold;
 	font-size: 15px;
 	
@@ -196,8 +196,8 @@
 
 
 .nav-2>li>a:hover {
-    text-decoration: none !important;
-    color: #033c69 !important;
+	text-decoration: none !important;
+	color: #033c69 !important;
 }
 
 .input-group{
@@ -209,7 +209,7 @@
 	padding: 6px 40px;
 	border: none;
 	margin-right: -95px;
-  width: 350px;
+	width: 300px;
 }
 
 .btn-email{
@@ -224,35 +224,35 @@
 	.header-con{text-align: center;}
 	.header-con h3{margin-top: 30px;}
 	.head-title{
-	  margin-top: 50px;
-  }
-  .triangle1 {height: 50px;}
-  .triangle2{
-	  height: 10px;
-  }
+		margin-top: 50px;
+	}
+	.triangle1 {height: 50px;}
+	.triangle2{
+		height: 10px;
+	}
 }
 
 @media (max-width: 740px) {
-  .triangle1 {height: 75px;}
-  .triangle2{
-	  height: 30px;
-  }
+	.triangle1 {height: 75px;}
+	.triangle2{
+		height: 30px;
+	}
 }
 @media (max-width: 450px) and (min-width: 200px) {
-  .triangle2{
-	  height: 15px;
-  }
+	.triangle2{
+		height: 15px;
+	}
 }
 @media (max-width: 550px) and (min-width: 450) {
-  .triangle2{
-	  height: 15px;
-  }
+	.triangle2{
+		height: 15px;
+	}
 }
 
 @media (max-width: 860px) and (min-width: 500px) {
-  .triangle2{
-	  height: 30px;
-  }
+	.triangle2{
+		height: 30px;
+	}
 }
 .steps{
 	text-align: center;
@@ -262,8 +262,8 @@
 	width: 50px; 
 	float: left; 
 	height: 70px;
-  margin-top: 70px;
-  background-position: center;
+	margin-top: 70px;
+	background-position: center;
 }
 
 .footer-link { width: 100%; overflow: hidden; }
@@ -274,8 +274,69 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+	outline: none;
 }
+.banner{
+	background-color: #f39800;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f39800), to(#fdac26));
+	background: -webkit-linear-gradient(top, #f39800, #fdac26);
+	background: -moz-linear-gradient(top, #f39800, #fdac26);
+	background: -ms-linear-gradient(top, #f39800, #fdac26);
+	background: -o-linear-gradient(top, #f39800, #fdac26);
+	overflow: hidden;
+	height: 150px;
+	margin: -40px -80px 0 -80px;
+	padding: 40px 80px;
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+.banner h1{color: #fff;
+	font-size: 36px;
+	margin: 0;
+	line-height: 70px;
+}
+
+.banner .skyline{
+	position: absolute;
+	right: -10px;
+	left: auto;
+	top: 0
+}
+.about-img.skyline{
+	background-position: 0 -300px;
+	width: 700px;
+	height: 200px;
+}
+.about-img{
+	background-image: url("//d7mj4aqfscim2.cloudfront.net/images/about/about-sprite5.svg");
+	display: inline-block;
+}
+
+.banner{border-radius: 10px 10px 0 0;}
+.banner .bridge{
+	position: absolute;
+	right: 50px;
+	left: auto;
+	bottom: -40px;
+}
+.about-img.bridge{
+	background-position: -1300px -300px;
+	width: 500px;
+	height: 140px
+}
+.container.main{
+	margin-top: 80px;
+	width: 800px;
+	border-radius: 10px;
+	margin-bottom: 80px;
+	background: #fff;
+}
+section.contents{
+	width: 100%;
+	min-height: 500px;
+}
+.gray{background: #e9e9e9;}
 /*
 .navbar-nav-2 {
     display: table;

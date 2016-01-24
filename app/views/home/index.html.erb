@@ -18,7 +18,7 @@
       <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
         <div class="">
           <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
-          <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'subnitting...'} %>
+          <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
         </div>
       <% end %>
     </div>
@@ -187,7 +187,7 @@
       <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
     <div class="">
       <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
-      <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'subnitting...'} %>
+      <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
     </div>
     <% end %>
   </div>
