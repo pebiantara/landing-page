@@ -71,7 +71,7 @@ set(:symlinks, [
 namespace :deploy do
   task :setup_config do
     on roles(:app) do
-      execute :sudo, "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/landing"
+      execute :sudo, "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/landing_page"
       execute :sudo, "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_landing"
     end
   end
