@@ -327,16 +327,17 @@ button:focus {
 }
 .container.main{
 	margin-top: 80px;
-	width: 800px;
 	border-radius: 10px;
 	margin-bottom: 80px;
 	background: #fff;
+	padding: 0px;
 }
 section.contents{
 	width: 100%;
 	min-height: 500px;
 }
-.gray{background: #e9e9e9;}
+body.gray{background: #e9e9e9;}
+
 /*
 .navbar-nav-2 {
     display: table;
