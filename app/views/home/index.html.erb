@@ -14,12 +14,12 @@
     <br/>
     <br/>
     <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-      <h3>Subscribe to our beta version:</h3>
+      <h3>Subscribe to our beta version: or <a href="mailto:customerservice@instabuyback.com" style="color: #fff;">Email Us</a>  </h3>
       <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
-        <div class="">
-          <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
-          <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
-        </div>
+      <div class="">
+        <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
+        <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
+      </div>
       <% end %>
     </div>
   </div>
@@ -39,17 +39,16 @@
     <div class="tContent2">
      <b>$50 Milion</b>
      <p>Next JackPot:</p>			
-     <p class="countdown">1 day 05:40:27</p>
-   </div>				
+     <p class="countdown-powerball" data-date="<%= powerball_jackpot %>">-</p>
+   </div>
  </div>
  <div class="col-lg-4 col-md-4 col-sm-4 text-center">
   <div class="floridalotto text-center"></div>
   <div class="tContent2">
    <b>$34 Milion</b>
    <p>Next JackPot:</p>			
-   <p class="countdown">1 day 05:40:27</p>
+   <p class="countdown-mega" data-date="<%= mega_jackpot %>">-</p>
    <br/>
-   <p>+ 3 Other Lotteries</p>
  </div>				
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 text-center">		
@@ -57,9 +56,10 @@
   <div class="tContent2">
    <b>$30 Milion</b>
    <p>Next JackPot:</p>			
-   <p class="countdown">1 day 05:40:27</p>
+   <p class="countdown-lotto" data-date="<%= lotto_jackpot%>">-</p>
  </div>				
-</div>				
+</div>
+<div class="more-lotery col-md-12 text-center"><p>+ 3 Other Lotteries</p></div>
 </div>
 </div>
 </div>
@@ -72,7 +72,7 @@
   <div class="col-lg-3 col-md-3 col-sm-3 steps col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
    <%= image_tag("step-1.png", width: '178', height: '176') %>
    <div class="">
-    <h3>1.- Choose</h3>
+    <h3>1. Choose</h3>
     <p>Select a game and your lucky<br/>
      nombers to play the lotteries<br/>
      you know and love<br/></p>
@@ -83,7 +83,7 @@
  <div class="col-lg-3 col-md-3 col-sm-3 steps">
   <%= image_tag('step-2.png', width: '178', height: '176') %>
   <div class="">
-   <h3>2.- Trade-in</h3>
+   <h3>2. Trade-in</h3>
    <p>Turn gift cards into USD credit<br/>
     to pay for your oficial lottery<br/>
     tickets<br/></p>
@@ -94,7 +94,7 @@
 <div class="col-lg-3 col-md-3 col-sm-3 steps">
  <%= image_tag('step-3.png', width: '178', height: '176') %>
  <div class="">
-  <h3>3.- Play</h3>
+  <h3>3. Play</h3>
   <p>Your oficial lottery ticket will<br/>
    be scanned and uploaded to<br/>
    your account before each<br/>
@@ -158,7 +158,6 @@
      <p>6 Games Supported</p>
    </div>
  </div>
-
  <div class="col-md-4"> 
   <%= image_tag('newyork.png', width: '201', height: '201') %>
   <div class="">
@@ -166,15 +165,13 @@
    <p>Coming soon</p>
  </div>
 </div>
-
 <div class="col-md-4"> 
   <%= image_tag('california.png', width: '201', height: '201') %>
   <div class="">
    <h3>California</h3>
    <p>Coming soon</p>
  </div>
-</div>			
-
+</div>
 </div>
 </div>
 </div>
@@ -183,8 +180,8 @@
   <div class="row">
    <div class="col-lg-4 col-md-4"><h1>Ready to play?</h1></div>
    <div class="col-lg-8 col-md-8">
-    <h4>Subscribe to the our beta version to start winning:</h4>
-      <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
+    <h4>Subscribe to the our beta version to start winning: or <a href="mailto:customerservice@instabuyback.com" style="color: #fff;">Email Us</a></h4>
+    <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
     <div class="">
       <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
       <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>

@@ -1,24 +1,32 @@
-var end = new Date($('#countdate').data('date'));
-var _second = 1000;
-var _minute = _second * 60;
-var _hour = _minute * 60;
-var _day = _hour * 24;
-var timer;
 
-function showRemaining() {
-	var now = new Date();
-	var distance = end - now;
+function intervalDate(){
+	arr = [$(".countdown-powerball"), $(".countdown-mega"), $(".countdown-lotto")];
+	$.each(arr, function(i, el){
+		string_date = $(el).data('date');
+		end = new Date(string_date);
+		_second = 1000;
+		_minute = _second * 60;
+		_hour = _minute * 60;
+		_day = _hour * 24;  
+  	showRemaining(_second, _minute, _hour, _day, end, el)
+	});
+}
+function showRemaining(_second, _minute, _hour, _day, end, element) {
+	now = new Date();
+	console.log(end);
+	console.log(now);
+	distance = end - now;
+	console.log(distance);
 	if (distance < 0) {
-		clearInterval(timer);
+		// clearInterval(timer);
 		return;
 	}
-	var days = Math.floor(distance / _day);
-	var hours = Math.floor((distance % _day) / _hour);
-	var minutes = Math.floor((distance % _hour) / _minute);
-	var seconds = Math.floor((distance % _minute) / _second);
+	days = Math.floor(distance / _day);
+	hours = Math.floor((distance % _day) / _hour);
+	minutes = Math.floor((distance % _hour) / _minute);
+	seconds = Math.floor((distance % _minute) / _second);
 
 	text_time = days + " days" + " " + hours + ":" + minutes + ":" + seconds;
-	$('.countdown').html(text_time);
+	$(element).html(text_time);
 }
-
-timer = setInterval(showRemaining, 1000);
+setInterval(intervalDate, 1000);

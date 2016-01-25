@@ -220,6 +220,10 @@
 	color: #fff; 
 }
 
+.btn-email:hover{cursor: pointer;
+  background-color: #34AAD1;
+}
+
 @media (max-width: 540px) {
 	.header-con{text-align: center;}
 	.header-con h3{margin-top: 30px;}

@@ -21,7 +21,6 @@
     <%= render "/shared/header" %>
     <%= yield %>
     <%= render "/shared/footer" %>
-    <div style="display:none" id="countdate" data-date="<%= (Time.zone.now + 3.day).strftime('%Y-%m-%d') %>"></div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
