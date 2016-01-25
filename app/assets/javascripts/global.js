@@ -25,8 +25,9 @@ function showRemaining(_second, _minute, _hour, _day, end, element) {
 	hours = Math.floor((distance % _day) / _hour);
 	minutes = Math.floor((distance % _hour) / _minute);
 	seconds = Math.floor((distance % _minute) / _second);
-
-	text_time = days + " days" + " " + hours + ":" + minutes + ":" + seconds;
+  days_info = days > 1 ? 'days' : 'day'
+  text_days = days > 0 ? (days + " " + days_info + " ") : '' 
+	text_time = text_days + hours + ":" + minutes + ":" + seconds;
 	$(element).html(text_time);
 }
 setInterval(intervalDate, 1000);
