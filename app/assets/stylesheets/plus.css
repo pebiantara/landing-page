@@ -246,6 +246,10 @@
 	.triangle2{
 		height: 15px;
 	}
+	.input-email{margin-right: -95px;
+	  width: 250px;
+  }
+
 }
 @media (max-width: 550px) and (min-width: 450) {
 	.triangle2{
