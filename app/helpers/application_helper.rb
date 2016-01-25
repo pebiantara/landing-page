@@ -7,12 +7,12 @@ module ApplicationHelper
 
   def mega_jackpot
     # Tuesday and Friday at 11:00 p.m
-    calculate_date(1, 4, "10:59")
+    calculate_date(1, 4, "11:00")
   end
 
   def lotto_jackpot
     # Every Wednesday and Saturday night
-    calculate_date(2, 5, "10:59")
+    calculate_date(2, 5, "11:15")
   end
 
   def calculate_date(index_day_1, index_day_2, jackpot_time)
