@@ -37,16 +37,16 @@
    <div class="col-lg-4 col-md-4 col-sm-4 text-center">
     <div class="powerball"></div>
     <div class="tContent2">
-     <b><%= lottery_amounts[:powerball] %></b>
-     <p>Next JackPot:</p>
+     <b>JackPot: <%= lottery_amounts[:powerball][:amount] %></b>
+     <p>NextDraw: <%= lottery_amounts[:powerball][:date] %></p>
      <p class="countdown-powerball" data-date="<%= powerball_jackpot %>">-</p>
    </div>
  </div>
  <div class="col-lg-4 col-md-4 col-sm-4 text-center">
   <div class="floridalotto text-center"></div>
   <div class="tContent2">
-   <b><%= lottery_amounts[:lotto] %></b>
-   <p>Next JackPot:</p>
+   <b>JackPot: <%= lottery_amounts[:lotto][:amount] %></b>
+   <p>NextDraw: <%= lottery_amounts[:lotto][:date] %></p>
    <p class="countdown-lotto" data-date="<%= lotto_jackpot %>">-</p>
    <br/>
  </div>				
@@ -54,8 +54,8 @@
 <div class="col-lg-4 col-md-4 col-sm-4 text-center">		
   <div class="megamillions text-center"></div>
   <div class="tContent2">
-   <b><%= lottery_amounts[:megaMillions] %></b>
-   <p>Next JackPot:</p>			
+   <b>JackPot: <%= lottery_amounts[:megaMillions][:amount] %></b>
+   <p>NextDraw: <%= lottery_amounts[:megaMillions][:date] %></p>
    <p class="countdown-mega" data-date="<%= mega_jackpot%>">-</p>
  </div>				
 </div>
@@ -119,15 +119,13 @@
   </div>
   <div class="col-md-6">					
     <div class="c-easy-mar">
-     <p class="c-easy-t1">GiftForWin acts as a free courier service<br/>
-      between you and official lottery retailers.<br/>
-      Our official messengers will buy the lotery<br/>
-      tickets on your behalf though livensed retailers.<br/>
-      <br/>
-      Our service is brought to you by<br/>
-      INSTABUYBACK LLC, a trade-in company that<br/>
-      makes money when it changes your gif card<br/>
-      balance into U.S. dollars<br/>
+     <p class="c-easy-t1">
+        GiftForWin includes free courier service <br/>
+        between you and official lottery retailers. <br/>
+        Our official messengers will buy the lottery tickets on your behalf though licensed retailers.<br/><br/>
+
+        Gift For Win is managed by <br/>
+        INSTABUYBACK LLC, a Florida Company. Instabank retains 25% of the converted used balance of prepaid gift cards. Lottery winners keep their winnings. InstaBuyBack does not retain a portion of any winnings.
     </p>
     <br/>
     <br/>
@@ -141,7 +139,7 @@
       <%= image_tag('ebay.png', width: '78', height: '51') %>
       <!-- <#%= image_tag('brand.png', width: '78', height: '51') %> -->
       <%= link_to "#" do %>
-        <span class="brand c-easy-t2">+100 brands</span>
+      <span class="brand c-easy-t2">+100 brands</span>
       <% end %>
     </div>
   </div>

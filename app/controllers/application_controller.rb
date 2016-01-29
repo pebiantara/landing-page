@@ -6,9 +6,9 @@ class ApplicationController < ActionController::Base
 
   def lottery_amounts
     Rails.cache.fetch("lottery_amounts", expires_in: 12.hours) do
-	    scrap = Scrapper.new
-	    scrap.get_amount_lottery
+      scrap = Scrapper.new
+      scrap.get_amount_lottery
     end
     Rails.cache.read("lottery_amounts")
-  end
+ end
 end

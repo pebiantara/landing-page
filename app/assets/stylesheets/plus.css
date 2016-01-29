@@ -208,7 +208,7 @@
 	border-radius: 25px;
 	padding: 6px 40px;
 	border: none;
-	margin-right: -95px;
+	margin-right: -90px;
 	width: 300px;
 }
 
@@ -223,6 +223,11 @@
 .btn-email:hover{cursor: pointer;
   background-color: #34AAD1;
 }
+.btn-email:disabled{
+	cursor: wait;
+  background-color: grey;
+}
+
 
 @media (max-width: 540px) {
 	.header-con{text-align: center;}
@@ -246,7 +251,7 @@
 	.triangle2{
 		height: 15px;
 	}
-	.input-email{margin-right: -95px;
+	.input-email{margin-right: -90px;
 	  width: 250px;
   }
 
@@ -285,12 +290,12 @@ button:focus {
 	outline: none;
 }
 .banner{
-	background-color: #f39800;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f39800), to(#fdac26));
-	background: -webkit-linear-gradient(top, #f39800, #fdac26);
-	background: -moz-linear-gradient(top, #f39800, #fdac26);
-	background: -ms-linear-gradient(top, #f39800, #fdac26);
-	background: -o-linear-gradient(top, #f39800, #fdac26);
+	background-color: #009f49;
+	background: -webkit-gradient(linear, left top, left bottom, from(#009f49), to(#05d34e));
+	background: -webkit-linear-gradient(top, #05d34e, #009f49);
+	background: -moz-linear-gradient(top, #05d34e, #009f49);
+	background: -ms-linear-gradient(top, #05d34e, #009f49);
+	background: -o-linear-gradient(top, #05d34e, #009f49);
 	overflow: hidden;
 	height: 150px;
 	margin: -40px -80px 0 -80px;
@@ -299,12 +304,14 @@ button:focus {
 	width: 100%;
 	margin: auto;
 }
-.banner h1{color: #fff;
+.banner h1, .h1-title{
 	font-size: 36px;
 	margin: 0;
 	line-height: 70px;
+	z-index: 2;
 }
-
+.h1-title{position: absolute; margin-top: -100px; margin-left: 50px; color: #013869;}
+.contents h3, .contents h2{color: #013869;}
 .banner .skyline{
 	position: absolute;
 	right: -10px;
@@ -312,13 +319,15 @@ button:focus {
 	top: 0
 }
 .about-img.skyline{
-	background-position: 0 -300px;
-	width: 700px;
+	/*background-position: 0 -300px;*/
+	width: 100%;
 	height: 200px;
+  position: absolute;
+  top: 0px;
 }
 .about-img{
-	background-image: url("//d7mj4aqfscim2.cloudfront.net/images/about/about-sprite5.svg");
 	display: inline-block;
+	background-size: 100%;
 }
 
 .banner{border-radius: 10px 10px 0 0;}

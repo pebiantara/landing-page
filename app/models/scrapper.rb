@@ -16,19 +16,22 @@ class Scrapper
 				text_content.css('.wnPlainBkgrd').each do |c|
 					amount = c.css(".wnNextJpAmt").first
 					amount = amount ? c.css(".wnNextJpAmt").first.text : ""
-					link = c.css('a').first['href']
-					results[link.to_sym] = amount
+          
+          next_jp = c.css(".wnNextDate").first
+          next_jp = next_jp ? c.css(".wnNextDate").first.text : ""
+          link = c.css('a').first['href']
+					results[link.to_sym] = {amount: amount, date: next_jp}
 				end
 			end
 			results
 		rescue
-			{:lotto => "$34 Million",
-				:powerball => "$50 Million",
-				:megaMillions => "$30 Million",
-				:luckyMoney => "",
-				:fantasy5 => "",
-				:play4 => "",
-				:cash3 => ""}
+			{:lotto => {amount: "$34 Million", date: "-"},
+				:powerball => {amount: "$50 Million", date: ""},
+				:megaMillions => {amount: "$30 Million", date: ""},
+				:luckyMoney => {amount: "", date: ""},
+				:fantasy5 => {amount: "", date: ""},
+				:play4 => {amount: "", date: ""},
+				:cash3 => {amount: "", date: ""}}
 		end
 	end
 end
