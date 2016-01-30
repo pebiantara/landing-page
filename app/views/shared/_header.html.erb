@@ -1,12 +1,42 @@
-<div class="header">
+<div class="box-header">
+  <nav class="navbar navbar-default">
     <div class="container">
-        <div class="row">
-           	<%= link_to root_path do %>
-              <div class="logo col-md-8 left"></div>
-            <% end %>
-            <div class="search col-md-2 right">
-                <!-- <button type="submit" class="btn btn-login"><b>Login</b></button> -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to root_path do %>
+        <div class="logo col-md-8 left navbar-brand"></div>
+        <% end %>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <button data-toggle="dropdown" type="submit" class="btn btn-login"><b>Login</b></button>
+            <div class="dropdown-menu">
+              <form role="form" method="post" action="#">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email" required="">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" placeholder="Password" id="password-login" class="form-control" name="password" required="">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="1" name="keep_login"> Keep me logged in
+                  </label>
+                </div>
+                <button class="btn btn-email" type="submit">Submit</button>
+              </form>
             </div>
-        </div>
+          </li>
+        </ul>              
+      </div>
     </div>
+  </nav>
 </div>

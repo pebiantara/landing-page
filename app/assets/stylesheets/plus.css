@@ -8,6 +8,42 @@
 	url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+.navbar{
+	border-radius: 0px;
+	border: none;
+	margin-bottom: 0px;
+}
+
+.navbar-header{padding-top: 10px;}
+
+.navbar-default{
+	background: #013869;
+	color: #fff;
+}
+
+.dropdown-menu{min-width: 250px;}
+
+.navbar-toggle{
+  margin-top: 0px;
+  border: 1px solid #009f49 !important;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background: #009f49;
+	color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar{background-color: #fff !important;}
+
+ul.nav.navbar-nav.navbar-right{
+	padding-top: 10px;
+}
+
+.dropdown-menu{padding: 20px !important; color: #888;}
+.btn-blue{background: #013869 !important; color: #fff;}
+.box-header{
+	border-bottom: 5px solid #009f49;	
+}
 /*HEADER*/
 .head-title{
 	margin-top: 100px;
@@ -26,6 +62,7 @@
 	background: #fff;
 	color: #59a34a;
 	border-radius: 25px;
+	width: 100%;
 }
 
 .left{
@@ -287,7 +324,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-	outline: none;
+	outline: none !important;
 }
 .banner{
 	background-color: #009f49;
